@@ -13,3 +13,6 @@ Route::get('/cektagihan', function () {
 
 Route::get('/pasang-baru', [PasangBaruController::class, 'create'])->name('pasang-baru.create');
 Route::post('/pasang-baru', [PasangBaruController::class, 'store'])->name('pasang-baru.store');
+Route::get('/tambahdaya', function () {
+    return view('tambahdaya');
+})->name('tambahdaya');

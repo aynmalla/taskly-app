@@ -103,7 +103,11 @@
                     <p class="mt-1 text-sm text-slate-500">Pilih layanan yang paling sesuai dengan kebutuhan Anda.</p>
 
                     <div class="mt-5 space-y-3">
+<<<<<<< HEAD
                         <a href="{{ route('pasang-baru.create') }}" class="group flex items-center gap-3 rounded-xl border border-slate-200 p-4 transition hover:border-[#0072bc] hover:bg-slate-50">
+=======
+                        <a href="{{ route('tambahdaya') }}" class="group flex items-center gap-3 rounded-xl border border-slate-200 p-4 transition hover:border-[#0072bc] hover:bg-slate-50">
+>>>>>>> origin/feature/tambahdaya
                             <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-[#0072bc]/10 text-[#0072bc]">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-5 w-5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
                             </span>
@@ -160,6 +164,7 @@
             @endphp
 
             @foreach ($layanan as [$judul, $deskripsi, $ikon, $warna])
+                @php($tautan = match ($judul) { 'Cek Tagihan' => route('cektagihan'), 'Tambah Daya' => route('tambahdaya'), default => '#kontak' })
                 <article class="group rounded-xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-[#0072bc]/40 hover:shadow-lg hover:shadow-slate-200">
                     <span class="grid h-11 w-11 place-items-center rounded-lg {{ $warna }}">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-5 w-5" aria-hidden="true">
@@ -173,6 +178,7 @@
                         'Cek Tagihan' => route('cektagihan'),
                         default => '#kontak',
                     } }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
+                    <a href="{{ $tautan }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
                         Selengkapnya
                         <svg viewBox="0 0 24 29" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition group-hover:translate-x-0.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
