@@ -6,4 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/cek-tagihan', 'cektagihan')->name('cektagihan');
+Route::get('/cektagihan', function () {
+    return view('cektagihan');
+})->name('cektagihan');

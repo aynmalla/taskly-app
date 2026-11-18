@@ -103,7 +103,7 @@
                     <p class="mt-1 text-sm text-slate-500">Pilih layanan yang paling sesuai dengan kebutuhan Anda.</p>
 
                     <div class="mt-5 space-y-3">
-                        <a href="#layanan" class="group flex items-center gap-3 rounded-xl border border-slate-200 p-4 transition hover:border-[#0072bc] hover:bg-slate-50">
+                        <a href="{{ route('cektagihan') }}" class="group flex items-center gap-3 rounded-xl border border-slate-200 p-4 transition hover:border-[#0072bc] hover:bg-slate-50">
                             <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-[#0072bc]/10 text-[#0072bc]">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-5 w-5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
                             </span>
@@ -169,7 +169,7 @@
                     </span>
                     <h3 class="mt-4 text-base font-semibold text-slate-900">{{ $judul }}</h3>
                     <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $deskripsi }}</p>
-                    <a href="{{ $tautan }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
+                    <a href="{{ $judul === 'Cek Tagihan' ? route('cektagihan') : '#kontak' }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
                         Selengkapnya
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition group-hover:translate-x-0.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
