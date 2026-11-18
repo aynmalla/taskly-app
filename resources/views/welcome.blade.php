@@ -169,7 +169,7 @@
                     </span>
                     <h3 class="mt-4 text-base font-semibold text-slate-900">{{ $judul }}</h3>
                     <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $deskripsi }}</p>
-                    <a href="{{ $judull === 'Cek Tagihan' ? route('cektagihan') : '#kontak' }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
+                    <a href="{{ $judul === 'Cek Tagihan' ? route('cektagihan') : '#kontak' }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
                         Selengkapnya
                         <svg viewBox="0 0 24 29" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition group-hover:translate-x-0.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
