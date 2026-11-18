@@ -149,7 +149,7 @@
 
         <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             @php
-                $layanan = [
+                $layanann = [
                     ['Pasang Baru', 'Pemasangan sambungan listrik untuk rumah tinggal, usaha, atau bangunan baru.', 'M5 12h14M12 5v14', 'bg-[#0072bc]/10 text-[#0072bc]'],
                     ['Tambah Daya', 'Naikkan daya tersambung karena kebutuhan peralatan listrik bertambah.', 'M12 19V5M5 12l7-7 7 7', 'bg-amber-100 text-amber-600'],
                     ['Ubah Daya', 'Sesuaikan daya listrik dengan kebutuhan, baik naik maupun turun.', 'M4 7h11l-3-3m8 13H9l3 3', 'bg-emerald-100 text-emerald-600'],
