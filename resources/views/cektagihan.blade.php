@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Informasi cara cek tagihan listrik dan riwayat pemakaian.">
-    <title>Cek Tagihan — PLN Layanan Publik</title>
+    <title>Cek Tagihan Gallan— PLN Layanan Publik</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet">
     @vite(['resources/css/app.css'])
