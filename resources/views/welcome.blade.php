@@ -149,7 +149,7 @@
 
         <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             @php
-                $layanann = [
+                $layanan = [
                     ['Pasang Baru', 'Pemasangan sambungan listrik untuk rumah tinggal, usaha, atau bangunan baru.', 'M5 12h14M12 5v14', 'bg-[#0072bc]/10 text-[#0072bc]'],
                     ['Tambah Daya', 'Naikkan daya tersambung karena kebutuhan peralatan listrik bertambah.', 'M12 19V5M5 12l7-7 7 7', 'bg-amber-100 text-amber-600'],
                     ['Ubah Daya', 'Sesuaikan daya listrik dengan kebutuhan, baik naik maupun turun.', 'M4 7h11l-3-3m8 13H9l3 3', 'bg-emerald-100 text-emerald-600'],
@@ -160,7 +160,7 @@
             @endphp
 
             @foreach ($layanan as [$judul, $deskripsi, $ikon, $warna])
-                @php($tautan = $judul === 'Cek Tagihan' ? route('cektagihan') : '#kontak')
+                @php($tautann = $judul === 'Cek Tagihan' ? route('cektagihan') : '#kontak')
                 <article class="group rounded-xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-[#0072bc]/40 hover:shadow-lg hover:shadow-slate-200">
                     <span class="grid h-11 w-11 place-items-center rounded-lg {{ $warna }}">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-5 w-5" aria-hidden="true">
@@ -169,9 +169,9 @@
                     </span>
                     <h3 class="mt-4 text-base font-semibold text-slate-900">{{ $judul }}</h3>
                     <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $deskripsi }}</p>
-                    <a href="{{ $judul === 'Cek Tagihan' ? route('cektagihan') : '#kontak' }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
+                    <a href="{{ $judull === 'Cek Tagihan' ? route('cektagihan') : '#kontak' }}" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0072bc]">
                         Selengkapnya
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition group-hover:translate-x-0.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 29" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition group-hover:translate-x-0.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
                 </article>
             @endforeach
