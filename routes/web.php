@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/cektagihan', function () {
     return view('cektagihan');
 })->name('cektagihan');
+
+Route::get('/tambahdaya', function () {
+    return view('tambahdaya');
+})->name('tambahdaya');
